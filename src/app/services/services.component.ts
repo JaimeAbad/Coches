@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class CochesService {
-  private coche: any[] = [
+  private coches: any[] = [
     {
       nombre: "Mercedes",
       bio: " Con la invención del automóvil, Gottlieb Daimler y Karl Benz ponen la primera piedra del tráfico motorizado individual.",
@@ -28,13 +28,13 @@ export class CochesService {
 }
 
 
-  getCoche(){
-    return this.coche;
+  getCoche(index:string){
+    return this.coches[index];
   }
 
-  verCoche(index:number){
-    console.log(index);
-    this.router.navigate(['/coche', index]);
+  getCoches(){
+    return this.coches;
   }
+
 
 }
