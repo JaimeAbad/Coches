@@ -1,0 +1,17 @@
+<h1>COCHES</h1>
+
+<div class="card-columns">
+
+
+  <div class="card mb-3" *ngFor="let coche of coches">
+    <img [src]="coche.img" class="card-img-top img-fluid" [alt]="coche.nombre">
+    <div class="card-body">
+      <h5 class="card-title">{{ coche.nombre }}</h5>
+      <p class="card-text">{{ coche.bio }}</p>
+      <p class="card-text"><small class="text-muted">{{ coche.aparicion }}</small></p>
+
+      <button (click)="verCoche(i)" type="button" class="btn btn-outline-primary btn-block"> Más </button>
+      <!-- <button type="button" class="btn btn-outline-primary btn-block"> Más </button> -->
+    </div>
+  </div>
+</div>
