@@ -1,1 +1,17 @@
-<p>Coche works!</p>
+<h1>{{coche.nombre | uppercase}}<small>{{coche.aparicion | date:'y'}}</small></h1>
+<hr>
+
+<div class="row">
+  <div class="col-md-4">
+    <img [src]="coche.img" class="img-fluid" [alt]="coche.nombre">
+    <br><br>
+    <a [routerLink] = "['/coches']" class="btn btn-outline-danger btn-block">Volver Come back</a>
+  </div>
+
+
+  <div class="col-md-8">
+    <h3>{{ coche.nombre }}</h3>
+    <hr>
+    <p>{{ coche.bio }}</p>
+  </div>
+</div>

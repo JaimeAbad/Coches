@@ -13,6 +13,7 @@ import { HomeComponent } from './components/shared/home/home.component';
 import { InfoComponent } from './components/shared/info/info.component';
 import { CochesComponent } from './components/shared/coches/coches.component';
 import { CocheComponent } from './components/shared/coche/coche.component';
+import { BuscadorComponent } from './components/shared/buscador/buscador.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { CocheComponent } from './components/shared/coche/coche.component';
     InfoComponent,
     CochesComponent,
     CocheComponent,
+    BuscadorComponent,
   ],
   imports: [
     BrowserModule,

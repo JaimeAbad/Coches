@@ -37,4 +37,32 @@ export class CochesService {
   }
 
 
+  buscarCoche(palabraBuscada:string): Coche[] {
+    let cocheArr: Coche[] = [];
+    palabraBuscada = palabraBuscada.toLowerCase();
+
+    for(let i=0; i<this.coches.length; i++){
+      let coche = this.coches[i];
+      let nombre = coche.nombre.toLowerCase();
+
+      /*si encuentra la palabra buscada devuelve 0 o +*/
+      if(nombre.indexOf(palabraBuscada) >=0){
+        // si entra aqui significa que ha encontrado la palabra palabraBuscada
+        cocheArr.push(coche); //añadimos el coche
+      }
+
+    }
+    return cocheArr;
+  }
+
+
+
+
+
+}
+export interface Coche {
+  nombre: string;
+  bio: string;
+  img: string;
+  aparicion: string;
 }
