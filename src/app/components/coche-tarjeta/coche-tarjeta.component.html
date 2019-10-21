@@ -1,7 +1,4 @@
-<h1>Buscador: <small>{{ palabraBuscada }}</small></h1>
-
-
-<!-- <div class="card-columns">
+<div class="card-columns">
 
 
   <div class="card mb-3" *ngFor="let coche of coches; let i = index">
@@ -11,7 +8,8 @@
       <p class="card-text">{{ coche.bio }}</p>
       <p class="card-text"><small class="text-muted">{{ coche.aparicion }}</small></p>
 
-      <button (click)="verCoche(i)"
+      <!-- llama a su verCoche que esta en su ts  -->
+      <button (click)="verCoche()"
        type="button"
         class="btn btn-outline-primary btn-block">
          Más
@@ -19,4 +17,4 @@
       <!-- <button type="button" class="btn btn-outline-primary btn-block"> Más </button> -->
     </div>
   </div>
-</div> -->
+</div>

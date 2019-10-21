@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CochesService } from "src/app/services/services.component";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-coches',
@@ -9,9 +10,8 @@ import { CochesService } from "src/app/services/services.component";
 export class CochesComponent implements OnInit {
 
   coches:any[] = [];
-  router: any;
 
-  constructor(private _cochesService: CochesService){}
+  constructor(private _cochesService: CochesService, private router:Router){}
 
 
   ngOnInit() {

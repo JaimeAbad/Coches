@@ -39,9 +39,7 @@
        aria-label="Search"
        (keyup.enter) = "buscarPalabra(buscarTexto.value)"
        #buscarTexto>
-       <button (click) = "buscarCoche(buscarTexto.value)"
-       class="btn btn-outline-success my-2 my-sm-0"
-        type="button"> > </button>
+       <button class="btn btn-outline-success my-2 my-sm-0" type="button" (click) = "buscarPalabra(buscarTexto.value)"> > </button>
     </form>
   </div>
 </nav>

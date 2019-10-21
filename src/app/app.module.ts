@@ -14,6 +14,7 @@ import { InfoComponent } from './components/shared/info/info.component';
 import { CochesComponent } from './components/shared/coches/coches.component';
 import { CocheComponent } from './components/shared/coche/coche.component';
 import { BuscadorComponent } from './components/shared/buscador/buscador.component';
+import { CocheTarjetaComponent } from './components/coche-tarjeta/coche-tarjeta.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { BuscadorComponent } from './components/shared/buscador/buscador.compone
     CochesComponent,
     CocheComponent,
     BuscadorComponent,
+    CocheTarjetaComponent,
   ],
   imports: [
     BrowserModule,
