@@ -15,15 +15,22 @@ export class BuscadorComponent implements OnInit {
               private _cochesServices: CochesService) { }
 
   ngOnInit() {
-    this._activatedRoute.params.subscribe(params => {
-      console.log(params['palabra']);
-      this.coches = this._cochesServices.buscarCoche(params['palabra']);
-      console.log(this.coches);
-    });
-    this._activatedRoute.params.subscribe(params => {
-      this.palabraBuscada = params['palabra'];
-    });
+    this.coches = this._cochesServices.getCoches();
+
+
+
+
+
+    // this._activatedRoute.params.subscribe(params => {
+    //   console.log(params['palabra']);
+    //   this.coches = this._cochesServices.buscarCoche(params['palabra']);
+    //   console.log(this.coches);
+    // });
+    // this._activatedRoute.params.subscribe(params => {
+    //   this.palabraBuscada = params['palabra'];
+    // });
   }
+
 
 
 }
