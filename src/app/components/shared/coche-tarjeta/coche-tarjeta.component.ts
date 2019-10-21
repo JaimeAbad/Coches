@@ -8,8 +8,8 @@ import { Router } from '@angular/router';
 })
 export class CocheTarjetaComponent implements OnInit {
 
-  @Input() coche:any = {};
-  @Input() index: number;
+  @Input() coche:any={};
+  @Input() index:number;
 
   constructor(private router: Router) { }
 
@@ -18,7 +18,7 @@ export class CocheTarjetaComponent implements OnInit {
 
   verCoche(){
     console.log(this.index);
-    this.router.navigate(['/coche', this.index])
+    this.router.navigate(['coche', this.index]);
   }
 
 }

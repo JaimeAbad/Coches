@@ -1,5 +1,4 @@
-<div class="card-columns">
-
+<h2>Coche Tarjeta</h2>
 
   <div class="card mb-3" *ngFor="let coche of coches; let i = index">
     <img [src]="coche.img" class="card-img-top img-fluid" [alt]="coche.nombre">
@@ -8,13 +7,12 @@
       <p class="card-text">{{ coche.bio }}</p>
       <p class="card-text"><small class="text-muted">{{ coche.aparicion }}</small></p>
 
-      <!-- llama a su verCoche que esta en su ts  -->
       <button (click)="verCoche()"
        type="button"
         class="btn btn-outline-primary btn-block">
          Más
         </button>
       <!-- <button type="button" class="btn btn-outline-primary btn-block"> Más </button> -->
+
     </div>
   </div>
-</div>
